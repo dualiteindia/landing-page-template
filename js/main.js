@@ -95,7 +95,9 @@ if (form) {
       body: JSON.stringify([[name, email, company, contact, note]]),
     };
 
-    fetch("https://v1.nocodeapi.com/mukul1312/google_sheets/cDeVtpDPOQEdMPMR?tabId=Sheet1", requestOptions)
+    const SHEET_ID = "cDeVtpDPOQEdMPMR"; // Replace with your actual Sheet ID
+
+    fetch(`https://v1.nocodeapi.com/mukul1312/google_sheets/${SHEET_ID}?tabId=Sheet1`, requestOptions)
       .then((response) => {
         if (response.ok) {
           alert("Thank you! Your request has been submitted successfully.");
