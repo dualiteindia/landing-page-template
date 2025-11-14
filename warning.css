@@ -1,23 +1,44 @@
-.env-warning {
-  background-color: #ffdddd;
+.env-warning-full-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.env-warning-content {
+  background-color: #2a2a2a;
   border: 1px solid #f44336;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.env-warning-content h1 {
   color: #f44336;
-  padding: 15px;
+  font-size: 24px;
   margin-bottom: 20px;
-  text-align: left;
 }
 
-.env-warning p {
-  margin: 0 0 10px;
+.env-warning-content p {
+  margin: 10px 0;
+  line-height: 1.6;
 }
 
-.env-warning code {
-  background-color: #f1f1f1;
-  padding: 2px 4px;
+.env-warning-content code {
+  background-color: #3a3a3a;
+  padding: 3px 6px;
   border-radius: 4px;
   font-family: monospace;
+  color: #ffdddd;
 }
 
-.env-warning ul {
-  margin-left: 20px;
+.env-warning-content ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
 }
