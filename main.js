@@ -95,9 +95,11 @@ if (form) {
       body: JSON.stringify([[name, email, company, contact, note]]),
     };
 
-    const SHEET_ID = "cDeVtpDPOQEdMPMR"; // Replace with your actual Sheet ID
+    const SHEET_ID = import.meta.env.VITE_SHEET_ID;
+    const tabId = import.meta.env.VITE_TAB_ID;
+    const userName = import.meta.env.VITE_USERNAME;
 
-    fetch(`https://v1.nocodeapi.com/mukul1312/google_sheets/${SHEET_ID}?tabId=Sheet1`, requestOptions)
+    fetch(`https://v1.nocodeapi.com/${userName}/google_sheets/${SHEET_ID}?tabId=${tabId}`, requestOptions)
       .then((response) => {
         if (response.ok) {
           alert("Thank you! Your request has been submitted successfully.");
