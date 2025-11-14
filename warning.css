@@ -1,0 +1,23 @@
+.env-warning {
+  background-color: #ffdddd;
+  border: 1px solid #f44336;
+  color: #f44336;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.env-warning p {
+  margin: 0 0 10px;
+}
+
+.env-warning code {
+  background-color: #f1f1f1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.env-warning ul {
+  margin-left: 20px;
+}
